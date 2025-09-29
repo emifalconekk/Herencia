@@ -8,18 +8,26 @@ public class Driver : User
     public string Vehicle
     {
         get { return vehicle; }
-        set { Vehicle = value; }
+        set { vehicle = value; }
     }
 
     public string Bio
     {
         get { return bio; }
-        set { Vehicle = value; }
+        set { bio = value; }
     }
 
     public bool Type
     {
         get { return type; }
-        set { Type = value; }
+        set { type = value; }
+    }
+
+    public Driver(string name, int id, string familyname, int calification, string vehicle, string bio, bool type) :
+        base(name, id, familyname, calification)
+    {
+        this.vehicle = vehicle;
+        this.bio = bio;
+        this.type = type;
     }
 }

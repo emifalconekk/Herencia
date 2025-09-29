@@ -41,5 +41,4 @@ public abstract class User
         this.calification = calification;
         users.Add(this);
     }
-
 }
